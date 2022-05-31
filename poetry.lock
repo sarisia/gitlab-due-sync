@@ -1,0 +1,175 @@
+[[package]]
+name = "attrs"
+version = "21.4.0"
+description = "Classes Without Boilerplate"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.extras]
+dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "furo", "sphinx", "sphinx-notfound-page", "pre-commit", "cloudpickle"]
+docs = ["furo", "sphinx", "zope.interface", "sphinx-notfound-page"]
+tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "cloudpickle"]
+tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "cloudpickle"]
+
+[[package]]
+name = "aws-cdk-lib"
+version = "2.26.0"
+description = "Version 2 of the AWS Cloud Development Kit library"
+category = "dev"
+optional = false
+python-versions = "~=3.7"
+
+[package.dependencies]
+constructs = ">=10.0.0,<11.0.0"
+jsii = ">=1.58.0,<2.0.0"
+publication = ">=0.0.3"
+
+[[package]]
+name = "aws-cdk.aws-lambda-python-alpha"
+version = "2.26.0a0"
+description = "The CDK Construct Library for AWS Lambda in Python"
+category = "dev"
+optional = false
+python-versions = "~=3.7"
+
+[package.dependencies]
+aws-cdk-lib = ">=2.26.0,<3.0.0"
+constructs = ">=10.0.0,<11.0.0"
+jsii = ">=1.58.0,<2.0.0"
+publication = ">=0.0.3"
+
+[[package]]
+name = "cattrs"
+version = "22.1.0"
+description = "Composable complex class support for attrs and dataclasses."
+category = "dev"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[package.dependencies]
+attrs = ">=20"
+exceptiongroup = {version = "*", markers = "python_version <= \"3.10\""}
+
+[[package]]
+name = "constructs"
+version = "10.1.22"
+description = "A programming model for software-defined state"
+category = "dev"
+optional = false
+python-versions = "~=3.7"
+
+[package.dependencies]
+jsii = ">=1.59.0,<2.0.0"
+publication = ">=0.0.3"
+
+[[package]]
+name = "exceptiongroup"
+version = "1.0.0rc7"
+description = "Backport of PEP 654 (exception groups)"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+test = ["pytest (>=6)"]
+
+[[package]]
+name = "jsii"
+version = "1.59.0"
+description = "Python client for jsii runtime"
+category = "dev"
+optional = false
+python-versions = "~=3.7"
+
+[package.dependencies]
+attrs = ">=21.2,<22.0"
+cattrs = ">=1.8,<22.2"
+python-dateutil = "*"
+typing-extensions = ">=3.7,<5.0"
+
+[[package]]
+name = "publication"
+version = "0.0.3"
+description = "Publication helps you maintain public-api-friendly modules by preventing unintentional access to private implementation details via introspection."
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "python-dateutil"
+version = "2.8.2"
+description = "Extensions to the standard Python datetime module"
+category = "dev"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
+
+[package.dependencies]
+six = ">=1.5"
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "typing-extensions"
+version = "4.2.0"
+description = "Backported and Experimental Type Hints for Python 3.7+"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "97ce70e4fcd6a177be186afca9d760687121d2c552da9980f9714eecb47e4546"
+
+[metadata.files]
+attrs = [
+    {file = "attrs-21.4.0-py2.py3-none-any.whl", hash = "sha256:2d27e3784d7a565d36ab851fe94887c5eccd6a463168875832a1be79c82828b4"},
+    {file = "attrs-21.4.0.tar.gz", hash = "sha256:626ba8234211db98e869df76230a137c4c40a12d72445c45d5f5b716f076e2fd"},
+]
+aws-cdk-lib = [
+    {file = "aws-cdk-lib-2.26.0.tar.gz", hash = "sha256:4a9dc6935dc15521f28e9d1970b6bac29bddb147d4956805dba0ac831fb43b21"},
+    {file = "aws_cdk_lib-2.26.0-py3-none-any.whl", hash = "sha256:9611cc29913a7d5c78e7cf11df41abea3ae81f7c2698155720104a03577d08aa"},
+]
+"aws-cdk.aws-lambda-python-alpha" = [
+    {file = "aws-cdk.aws-lambda-python-alpha-2.26.0a0.tar.gz", hash = "sha256:7abd915c108ef1fd9266248632cf703b269e3aba42d289a992244116749a1bc4"},
+    {file = "aws_cdk.aws_lambda_python_alpha-2.26.0a0-py3-none-any.whl", hash = "sha256:6d632162386490b984cf0e4437279ff68d4fc11865845ecd90bced774e9113e7"},
+]
+cattrs = [
+    {file = "cattrs-22.1.0-py3-none-any.whl", hash = "sha256:d55c477b4672f93606e992049f15d526dc7867e6c756cd6256d4af92e2b1e364"},
+    {file = "cattrs-22.1.0.tar.gz", hash = "sha256:94b67b64cf92c994f8784c40c082177dc916e0489a73a9a36b24eb18a9db40c6"},
+]
+constructs = [
+    {file = "constructs-10.1.22-py3-none-any.whl", hash = "sha256:954e8d0dca9c7c945f747d82fde82909b873c0f81d797876eeb34fd56cb26978"},
+    {file = "constructs-10.1.22.tar.gz", hash = "sha256:3a7061bc4a4ea257d27869d11d4b07c255b74c94ae1c4f52c95f134790ab85a4"},
+]
+exceptiongroup = [
+    {file = "exceptiongroup-1.0.0rc7-py3-none-any.whl", hash = "sha256:82dc1cfc21bb5f921a25925e80ec696c71b7d108c6c63bd8a786abe2b73c3263"},
+    {file = "exceptiongroup-1.0.0rc7.tar.gz", hash = "sha256:2019e6e9d6ef84ff65c5c7c451b75802c662d53bcb124abf47ad118d39f9a1ca"},
+]
+jsii = [
+    {file = "jsii-1.59.0-py3-none-any.whl", hash = "sha256:6a9f587cdc1b03129375f9faed876d864383d2b341471c1296a0040622fe938a"},
+    {file = "jsii-1.59.0.tar.gz", hash = "sha256:d7ea32e1d6c8aa597be7ecf10eb0e05355db60e6ca986f82dab3fb5aa52d914f"},
+]
+publication = [
+    {file = "publication-0.0.3-py2.py3-none-any.whl", hash = "sha256:0248885351febc11d8a1098d5c8e3ab2dabcf3e8c0c96db1e17ecd12b53afbe6"},
+    {file = "publication-0.0.3.tar.gz", hash = "sha256:68416a0de76dddcdd2930d1c8ef853a743cc96c82416c4e4d3b5d901c6276dc4"},
+]
+python-dateutil = [
+    {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
+    {file = "python_dateutil-2.8.2-py2.py3-none-any.whl", hash = "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"},
+]
+six = [
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+    {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
+]
+typing-extensions = [
+    {file = "typing_extensions-4.2.0-py3-none-any.whl", hash = "sha256:6657594ee297170d19f67d55c05852a874e7eb634f4f753dbd667855e07c1708"},
+    {file = "typing_extensions-4.2.0.tar.gz", hash = "sha256:f1c24655a0da0d1b67f07e17a5e6b2a105894e6824b92096378bb3668ef02376"},
+]
